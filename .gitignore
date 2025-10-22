@@ -137,3 +137,9 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+#Nome cartella o file che non vogliano passare ad ogni commit 
+#es cartella:
+# css/
+#es nella cartella
+# .js/calc.js

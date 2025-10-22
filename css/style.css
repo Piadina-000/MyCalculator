@@ -1,0 +1,48 @@
+#divBody{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: rgb(149, 202, 233);
+
+    left: 0px;
+    top: 0px;
+}
+
+#divTestata {
+    width: 100%;
+    height: 100px;
+
+    left: 0px;
+    top: 0px;
+
+    background-color: rgb(75, 131, 168);
+
+    position: absolute;
+    z-index: 1000;
+}
+
+#divContent {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 105px;
+    background-color: rgb(162, 202, 224);
+    z-index: 1000;
+}
+
+table {
+    margin: 0 auto; /* Centra la tabella orizzontalmente */
+}
+
+button{
+    width: 70px;
+    height: 50px;
+    shape-outside: circle();
+    background-color: rgb(180, 59, 59);
+    text-decoration-color: black;
+}
+
+
+
+
+
