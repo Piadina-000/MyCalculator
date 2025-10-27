@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCalculator</title>
-    <script src="js/calc.js"></script>
-    <link rel="stylesheet" href="css/style.css"> 
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div style="text-align: center;" id="divBody">
-        <div style="text-align: center;" id="divTestata">
-            <h1>CALCOLATRICE PAZZA SGRAVATA</h1>
+    <div class="calculator">
+        <h2>Calcolatrice pazza sgravata</h2>
+        <input type="number" name="" id="" placeholder="Primo numero">
+        <input type="number" name="" id="" placeholder="Secondo numero">
+        <div>
+            <button class="op" id="1">+</button>
+            <button class="op" id="2">-</button>
+            <button class="op" id="3">×</button>
+            <button class="op" id="4">÷</button>
         </div>
-
-        <div id="divContent">
-            <br>
-            <input type="number" name="val1" id="val1">
-            <input type="number" name="val2" id="val2">
-
-            <br>
-            <table>
-                <tr>
-                    <th>
-                        <button class="op" id="1">+</button>
-                    </th>
-                    <th>
-                        <button class="op" id="2">-</button>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <button class="op" id="3">*</button>
-                    </th>
-                    <th>
-                        <button class="op" id="4">/</button>
-                    </th>
-                </tr>
-            </table>
-            <br>
-            <p id="result"></p>
-        </div>
+        <div id="result">Risultato: </div>
     </div>
+
+    <!-- <script>
+        function calculate(operation) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Inserisci numeri validi!";
+            } else {
+                switch (operation) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        if (num2 === 0) {
+                            result = "Errore: divisione per zero!";
+                        } else {
+                            result = num1 / num2;
+                        }
+                        break;
+                    default:
+                        result = "Operazione non valida";
+                }
+            }
+            document.getElementById('result').textContent = "Risultato: " + result;
+        }
+    </script> -->
 </body>
 </html>

@@ -25,3 +25,4 @@ function moltiplicazione(a, b){
 function divisione(a, b){
     return a / b;
 }
+
