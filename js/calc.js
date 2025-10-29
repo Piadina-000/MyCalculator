@@ -31,18 +31,17 @@ allBtn.forEach((btn) => {
         }else{
             result.innerText = "Risultato: " + res;
 
-            let MyLog = new myLog(a, b, operation);
+            let myLog = new MyLog(a, b, operation);
 
             let btnLoad = document.createElement("button");
             btnLoad.innerText = "LOAD";
-            btnLoad.addEventListener("click", MyLog.fnLoad);
+            btnLoad.addEventListener("click", myLog.fnLoad);
 
             let logLine = document.createElement("li");
-
-            logLine.innerText = `Eseguito ${MyLog.val1} ${MyLog.operation} ${MyLog.val2}`;
+            logLine.innerText = `Eseguito ${myLog.val1} ${myLog.operation} ${myLog.val2}`;
             logLine.append(btnLoad);
 
-            memory.appendChild();
+            memory.appendChild(logLine);
         }
 
     });
@@ -73,12 +72,13 @@ function performOperation(a, b, operation) {
     }
 }
 
-function myLog(a, b, operation){
+function MyLog(a, b, operation){
     this.val1 = a;
     this.val2 = b;
     this.operation = operation;
 
-    this.fnLoad = function() =>{
+    this.fnLoad = () => {
+        console.log("LOAD", this.val1, this.val2);
         val1.value = this.val1;
         val2.value = this.val2;
     }
