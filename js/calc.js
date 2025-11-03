@@ -1,3 +1,11 @@
+/**
+ * Esegue l'operazione tra a e b 
+ * @param a {number}
+ * * @param b {number}
+ * * @param operetion {string}
+ * * @returns  {number/Error}
+ */
+
 import {performOperation} from "./math/performOperation.js";
 import {MyLog} from "./log/log.js";
 
@@ -49,16 +57,3 @@ allBtn.forEach((btn) => {
 
     });
 });
-
-/**
- * Esegue l'operazione tra a e b 
- * @param a {number}
- * * @param b {number}
- * * @param operetion {string}
- * * @returns  {number/Error}
- */
-
-
-
-
-
