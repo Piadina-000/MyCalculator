@@ -1,3 +1,6 @@
+import {performOperation} from "./math/performOperation.js";
+import {MyLog} from "./log/log.js";
+
 let allBtn = document.querySelectorAll("button");
 
 let val1 = document.getElementById("val1");
@@ -54,48 +57,8 @@ allBtn.forEach((btn) => {
  * * @param operetion {string}
  * * @returns  {number/Error}
  */
-function performOperation(a, b, operation) {
 
-    console.log(a,b);
-    switch (operation) {
-        case "+":
-            return somma(a, b);
-            
-        case "-":
-            return sottrazione(a, b);
-        case "/":
-            return divisione(a, b);
-        case "*":
-            return moltiplicazione(a, b);
-        default:
-            return Error("Operazione non valida");
-    }
-}
 
-function MyLog(a, b, operation){
-    this.val1 = a;
-    this.val2 = b;
-    this.operation = operation;
 
-    this.fnLoad = () => {
-        console.log("LOAD", this.val1, this.val2);
-        val1.value = this.val1;
-        val2.value = this.val2;
-    }
-}
 
-function somma(a, b) {
-    return a + b;
-}
 
-function sottrazione(a, b) {
-    return a - b;
-}
-
-function divisione(a, b) {
-    return a / b;
-}
-
-function moltiplicazione(a, b) {
-    return a * b;
-}
